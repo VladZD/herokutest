@@ -1,0 +1,17 @@
+{
+  "name": "herokutest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "8.4.0"
+  },
+  "repository": "git@github.com:VladZD/herokutest.git",
+  "author": "Vlad Drozd <vladbbird@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
