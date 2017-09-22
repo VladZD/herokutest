@@ -5,6 +5,8 @@ var compColorTwo = "#D9F9D9";
 var defaultCommentWindowPixelWidth = 300; // set as a global variable so this value can be customized by the user
 
 window.onload = function() {
+	console.log('window.top === window: ' + window.top === window);
+	console.log('window.location.search !== "?auto": ' + window.location.search !== "?auto");
 	if (window.top === window || window.location.search !== "?auto") return;
 	document.body.style.overflow = 'hidden';
 	var scrollHeight = Math.max(
