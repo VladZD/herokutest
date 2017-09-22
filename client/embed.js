@@ -1,4 +1,5 @@
 (function() {
+  console.log('script is run');
   if (window.__IS_C2K_LISTENERS_SET__) {
     window.postMessage('C2K_EMBED_LOADED', '*');
     return;
@@ -81,6 +82,7 @@
     window.attachEvent("onmessage", iframeHeightListener);
     window.attachEvent("onmessage", iframePopupListener);
   }
+  console.log('script managed to go further');
   var URL = 'testvlad.herokuapp.com/embed.js', //without protocol
     originRegexp = /^https*:\/\/testvlad.herokuapp.com/,
     numberOfScripts = 0,
