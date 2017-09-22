@@ -44,7 +44,9 @@
     script.parentElement.insertBefore(iframe, script);
   };
   var embedLoadedListener = function(e) {
+    console.log('embed_loaded');
     if (e.source !== window || e.data !== 'C2K_EMBED_LOADED') return;
+    console.log('embed_loaded_2');
     loadIframe(numberOfScripts++);
   };
   var getIframeByWindow = function(iframeWindow) {
